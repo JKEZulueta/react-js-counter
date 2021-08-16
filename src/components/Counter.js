@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Counter.css";
 
 function Counter(){
 
@@ -14,10 +15,12 @@ function decrease(){
 
 return (
 
-    <div>
-        <button onClick={increase}>+</button>
-        <span>{number}</span>
-        <button onClick={decrease}>-</button>
+    <div className="counter">
+        <fieldset className="myFieldset">
+        <button onClick={increase} className="increase">+</button>
+        <span className="mySpan">{number}</span>
+        <button onClick={decrease} className="decrease">-</button>
+        </fieldset>
     </div>
 
 
