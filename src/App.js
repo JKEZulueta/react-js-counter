@@ -1,12 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Counter from './components/Counter'
-import CounterGroup from './components/CounterGroup';
+import MultiCounter from './components/MultiCounter';
 
 function App() {
   return (
     <div className="App">
-      <CounterGroup></CounterGroup>
+      <MultiCounter></MultiCounter>
     </div>
   );
 }

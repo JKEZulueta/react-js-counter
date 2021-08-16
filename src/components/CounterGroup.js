@@ -2,7 +2,7 @@ import Counter from "./Counter";
 
 
 
-function CounterGroup (){
+function CounterGroup (props){
 
     function generateCounterList(){
         return new Array(5).fill(Date.now())
@@ -11,9 +11,9 @@ function CounterGroup (){
     const counterList = generateCounterList();
     return(
         <div>
-        {counterList.map(() => 
+        {counterList.map((item, index) => 
         (
-            <Counter></Counter>
+            <Counter key={item + index}></Counter>
         ))}
         </div>
     );
